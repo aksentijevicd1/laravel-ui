@@ -1,70 +1,71 @@
-# Getting Started with Create React App
+# Online Kviz - Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Opis
 
-## Available Scripts
+Ova aplikacija je veb platforma za igranje online kvizova. Korisnici mogu igrati kvizove u privatnim i javnim sobama. Administratori imaju mogućnost kreiranja sopstvenih soba. Poeni se dodeljuju na osnovu tačnosti i brzine odgovora. Uz pomoć soketa omogućen je uvid u broj korisnika koji su već odgovorili na pitanje i onih koji još uvek razmišljaju.
 
-In the project directory, you can run:
+## Tehnologije
 
-### `npm start`
+- **Frontend:** React
+- **Backend:** Laravel (pogledajte zaseban `README.md` u backend repozitorijumu)
+- **Alati:** HTML, CSS, JavaScript
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Instalacija
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. **Kloniranje repozitorijuma:**
 
-### `npm test`
+   ```bash
+   git clone https://github.com/elab-development/internet-tehnologije-projekat-onlinekviz_2020_0168.git
+   cd internet-tehnologije-projekat-onlinekviz_2020_0168
+   ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. **Navigacija do frontend foldera:**
 
-### `npm run build`
+   ```bash
+   cd frontend
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. **Instalacija zavisnosti:**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   Uverite se da imate instaliran Node.js i npm. Zatim pokrenite:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   ```bash
+   npm install
+   ```
 
-### `npm run eject`
+## Pokretanje projekta
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Pokrenite lokalni razvojni server:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+npm start
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Aplikacija će biti dostupna na `http://localhost:3000`.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Funkcionalnosti
 
-## Learn More
+1. **Početna stranica:**
+   - Korisnici mogu da se prijave ili registruju kako bi mogli da istraže dostupne kvizove i učestvuju u njima.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+2. **Stranica za registraciju:**
+   - Korisnici mogu da kreiraju nalog unosom svog imena, mejl adrese i lozinke.
+   
+3. **Stranica za prijavu:**
+   - Korisnici mogu da se prijave na sistem unosom mejl adrese i lozinke.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+4. **Stranica za resetovanje lozinke:**
+   - Korisnici mogu da resetuju svoju lozinku putem mejla.
 
-### Code Splitting
+5. **Kreiranje kviza:**
+   - Administratori mogu da kreiraju nove kvizove sa pitanjima i odgovorima.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+6. **Igranje kviza:**
+   - Korisnici mogu da učestvuju u kvizovima, odgovaraju na pitanja i dobijaju poene na osnovu tačnosti i brzine.
 
-### Analyzing the Bundle Size
+7. **Stranica sa rezultatima:**
+   - Korisnici mogu da vide rezultate drugih korisnika nakon završetka kviza.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## API Dokumentacija
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+API dokumentacija se može naći u PDF dokumentu "ITEH dokumentacija.pdf" ili u sekciji `api.php` Laravel aplikacije.
